@@ -24,3 +24,4 @@ scrape_configs:
 target_config:
   {{ promtail_target_config | to_nice_yaml(indent=2) | indent(2, False) }}
 {% endif %}
+{{ promtail_config_custom }}
